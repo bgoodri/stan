@@ -95,6 +95,10 @@ namespace stan {
     inline void 
     assign(Eigen::Matrix<LHS,R,C>& x, 
            const Eigen::Matrix<RHS,R,C>& y) {
+      if(x.rows() == 0 && x.cols() == 0) {
+        x = y;
+        return ;
+      }
       stan::math::check_matching_dims("assign",
                                                 "x", x,
                                                 "y", y);
