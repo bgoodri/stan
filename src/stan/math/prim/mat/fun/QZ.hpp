@@ -32,9 +32,9 @@ namespace stan {
                               Eigen::Matrix<T_B,Eigen::Dynamic,Eigen::Dynamic> >(B));
       std::vector<Eigen::Matrix<T_return_type,Eigen::Dynamic,Eigen::Dynamic> >
         out(4);
-      out[0] = solver.matrixQ();
-      out[1] = solver.matrixS();
-      out[2] = solver.matrixT();
+      out[0] = solver.matrixS();
+      out[1] = solver.matrixT();
+      out[2] = solver.matrixQ();
       out[3] = solver.matrixZ();
       return out;
     }
