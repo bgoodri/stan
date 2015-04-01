@@ -30,6 +30,7 @@ namespace stan {
                               Eigen::Matrix<T_B,Eigen::Dynamic,Eigen::Dynamic> >(A),
                promote_common<Eigen::Matrix<T_A,Eigen::Dynamic,Eigen::Dynamic>,
                               Eigen::Matrix<T_B,Eigen::Dynamic,Eigen::Dynamic> >(B));
+//      solver.partition(); // not part of upstream Eigen
       std::vector<Eigen::Matrix<T_return_type,Eigen::Dynamic,Eigen::Dynamic> >
         out(4);
       out[0] = solver.matrixS();
@@ -41,4 +42,4 @@ namespace stan {
 
   }
 }
-
+#endif
