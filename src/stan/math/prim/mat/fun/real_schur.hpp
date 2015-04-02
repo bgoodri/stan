@@ -12,8 +12,8 @@ namespace stan {
     template <typename T>
     std::vector<Eigen::Matrix<T,Eigen::Dynamic,Eigen::Dynamic> >
     real_schur(const Eigen::Matrix<T,Eigen::Dynamic,Eigen::Dynamic>& m) {
-      stan::math::check_nonzero_size("eigenvectors_sym", "m", m);
-      stan::math::check_square("pseudoeigensystem", "m", m);
+      stan::math::check_nonzero_size("real_schur", "m", m);
+      stan::math::check_square("real_schur", "m", m);
 
       Eigen::RealSchur<Eigen::Matrix<T,Eigen::Dynamic,Eigen::Dynamic> > solver(m);
       std::vector<Eigen::Matrix<T,Eigen::Dynamic,Eigen::Dynamic> > out(2);

@@ -120,6 +120,8 @@
 #include <stan/math/prim/mat/fun/promote_scalar.hpp>
 #include <stan/math/prim/mat/fun/promote_scalar_type.hpp>
 #include <stan/math/prim/mat/fun/promoter.hpp>
+#include <stan/math/prim/mat/fun/pseudoeigensystem.hpp>
+#include <stan/math/prim/mat/fun/QZ.hpp>
 #include <stan/math/prim/mat/fun/qr_Q.hpp>
 #include <stan/math/prim/mat/fun/qr_R.hpp>
 #include <stan/math/prim/mat/fun/quad_form.hpp>

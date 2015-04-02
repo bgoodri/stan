@@ -173,6 +173,14 @@ TEST(lang_parser, prod_matrix_function_signatures) {
   test_parsable("function-signatures/math/matrix/prod");
 }
 
+TEST(lang_parser, pseudoeigensystem_matrix_function_signatures) {
+  test_parsable("function-signatures/math/matrix/pseudoeigensystem");
+}
+
+TEST(lang_parser, QZ_matrix_function_signatures) {
+  test_parsable("function-signatures/math/matrix/QZ");
+}
+
 TEST(lang_parser, qr_Q_matrix_function_signatures) {
   test_parsable("function-signatures/math/matrix/qr_Q");
 }

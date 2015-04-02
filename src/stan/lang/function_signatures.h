@@ -679,6 +679,8 @@ add("prod",DOUBLE_T,expr_type(DOUBLE_T,1));
 add("prod",DOUBLE_T,VECTOR_T);
 add("prod",DOUBLE_T,ROW_VECTOR_T);
 add("prod",DOUBLE_T,MATRIX_T);
+add("pseudoeigensystem",expr_type(MATRIX_T,1),MATRIX_T);
+add("make_pseudoeigensystem",expr_type(MATRIX_T,1),MATRIX_T,MATRIX_T,MATRIX_T,INT_T);
 add("quad_form",DOUBLE_T,MATRIX_T,VECTOR_T);
 add("quad_form",MATRIX_T,MATRIX_T,MATRIX_T);
 add("quad_form_sym",DOUBLE_T,MATRIX_T,VECTOR_T);
